@@ -1,0 +1,119 @@
+body {
+	color: #566787;
+	background: #e70000;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 13px;
+}
+
+.container{
+    margin-top: 10px;
+    margin-bottom: 40px;
+	border-radius: 20px;
+	padding: 10px;
+    color: #050505;
+	background-color: #ffffff;
+	flex-direction: row;
+	display: flex;
+	box-shadow: 0 5px 5px 0 rgba(194, 7, 7, 0.4);
+
+}
+h2{
+	text-align: center;
+    text-transform: uppercase;
+    color: #b8b8b8;
+
+}
+h3{
+	text-transform: uppercase;
+	padding-top: 22px;
+	padding-bottom: 15px;
+	padding-left: 12px;
+    color: #afafaf;
+}
+.container2{
+	margin-top: 10px;
+    margin-bottom: 40px;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+#formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 999px;
+    position: relative;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    font-family: sans-serif;
+    background-color: #f6f6f6;
+
+  }
+
+
+.mainDiv{
+	display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+    background-image: url(../static/logo-poder.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#contenidoUser{
+	margin-left: 485px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+
+}
+#contenidoEspe{
+	margin-left: 550px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+
+}
+#contenidoSede{
+	margin-left: 678px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+
+}
+#contenidoVent{
+	margin-left: 587px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+
+}
+#contenido22{
+	margin-top: 9px;
+	margin-bottom: 9px;
+
+	margin-left: 19px;
+}
+
+button[type=submit]{
+	background-color: #9e0505;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    border-radius: 12px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+    font-family: system-ui;
+
+}
+button[type=submit]:hover{
+	background-color: rgb(243, 36, 36);
+}

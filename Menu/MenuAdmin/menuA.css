@@ -1,0 +1,190 @@
+/*---------------- Estructura general ----------------------------*/
+/*----------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  background-image: url(../MenuAdmin/static/logo-poder.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all 0.5s;
+}
+
+.contenido2 {
+  padding-top: 105px;
+  padding-left: 50px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  margin-left: 18%;
+  margin-right: 5%;
+  height: 400px;
+  position: relative;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/*----------------------------------------------------------------*/
+/*------------------- Etiquetas ----- ----------------------------*/
+/*----------------------------------------------------------------*/
+h1 {
+  padding-top: 25px;
+}
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #9e0505;
+  text-transform: uppercase;
+  user-select: none;
+  font-family: system-ui;
+
+}
+
+
+.sidebar ul button {
+  text-transform: uppercase;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: #cccccc;
+  text-align: left;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(173, 173, 173);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+  font-family: system-ui;
+
+}
+
+button[type=submit] {
+  background-color: white;
+  font-family: system-ui;
+  padding-left: 20px;
+  border-right: #ffffff;
+  border-left: #ffffff;
+  
+}
+.btn_logout {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 65px;
+  margin-bottom: 35px;
+  margin-left: 25px;
+  background-color: #9e0505;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  box-shadow: 0 10px 30px 0 rgba(128, 3, 3, 0.4);
+  border-radius: 12px;
+  font-family: system-ui;
+  
+}
+.btn_logout:hover {
+  background-color: #d12525;
+  
+}
+
+
+.btn_ext {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-left: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  background-color: #9e0505;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 10px 30px 0 rgba(128, 3, 3, 0.4);
+  font-family: system-ui;
+}
+
+.btn_ext:hover {
+  background-color: #d12525;
+}
+
+
+ul li:hover button {
+  padding-left: 50px;
+  background-color:rgba(211, 11, 11, 0.747);
+  color: white;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 1px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+
+#check {
+  display: none;
+}
+#check:checked~.sidebar {
+  left: 0;
+}
+
+#check:checked~label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked~section {
+  margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

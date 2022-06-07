@@ -1,0 +1,226 @@
+*:focus {
+    outline: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: #DDD;
+    font-size: 16px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-image: url(../static/logo-poder.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  h1{
+    text-align: center;
+      text-transform: uppercase;
+      color: #b8b8b8;
+
+  
+  }
+  
+  #login-box {
+    position: relative;
+    margin: 5% auto;
+
+    width: 600px;
+    height: 550px;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  .container{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    flex-direction: row;
+    display: flex;
+
+}
+#cont1{
+  margin-left: 100px;
+}
+#cont2{
+  margin-left: 60px;
+}
+  
+  .left {
+    position: absolute;
+    margin-top: 8px;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+  }
+  
+ 
+  input[type="number"],
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid rgb(235, 26, 26);
+    /*#AAA*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+  
+  input[type="number"]:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    /*border-bottom: 2px solid #16a085;*/
+    /*color: #16a085;*/
+    border-bottom: #DD4B39;
+    color: #DD4B39;
+    transition: 0.2s ease;
+  }
+  
+  
+
+  button[type=submit]{
+    background-color: #9e0505;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+      box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+      border-radius: 12px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 35px;
+      margin-bottom: 35px;
+      font-family: system-ui;
+  
+  }
+  button[type=submit]:hover{
+    background-color: rgb(243, 36, 36);
+  }
+  
+  
+  
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    margin-top: 70px;
+    height: 400px;
+    background: url('../static/user.jpg');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  .right .loginwith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+  }
+  
+  
+  
+  
+
+  /*Animacion*/
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    margin-top: 35px;
+  }
