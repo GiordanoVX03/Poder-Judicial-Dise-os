@@ -5,12 +5,11 @@
     <title>Touch Pad</title>
     <link rel="stylesheet" href="../TMatriz/EMTstyle.css">
 </head>
-<body>
+<body onload="init();">
     <div class="container">
-        <form name="form">
             <div class="display">
                 <div class="display2">
-                    <p class="ip">0</p>
+                    <p class="result-box ip" id="ipRes" ></p>
                 </div>
             </div>
             <div class="buttons">
@@ -31,7 +30,6 @@
                 </div>
                 <div class="row">
                     <button class="botonesRZ" type="submit" id="num0"> 0</button>
-                    <button class="botonesR" type="submit" id="delone"> < </button>
                 </div>
             </div>
             <div class="right">
@@ -51,7 +49,8 @@
                     </button>
                 </div>
             </div>
-        </form>
     </div>
+    <script src="../TMatriz/FTeclado.js"></script>
+
 </body>
 </html>

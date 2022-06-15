@@ -53,10 +53,11 @@
     .ip {
       width: 500px;
       min-height: 62px;
-      text-align: right;
+      text-align: center;
       color: rgb(14, 14, 14);
       letter-spacing: 1px;
       position: absolute;
+      padding-left: 80px;
       top: 100px;
       left: 50%;
       padding-top: 15px;
@@ -75,7 +76,7 @@
     }
 
     .botonesRZ {
-      width: 130px;
+      width: 185px;
       height: 60px;
       float: left;
       margin: 5px;
