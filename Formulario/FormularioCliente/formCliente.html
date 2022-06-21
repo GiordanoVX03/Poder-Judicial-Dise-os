@@ -13,17 +13,28 @@
         <div id="formContent">
           <h3>Cliente</h3>
           <form>
-            <h4>ID</h4>
-            <input type="number" id="ip_Cid" class="fadeIn second">
+
+            <!-- Comienza la modificacion para el icono, de la seccion DNI  -->
+            <!-- Revisar archivo fClientes css -- Linea 95  -->
+            <div class="row">
+              <div class="col-sm-12" style="margin-left: 15px;" >
+                <h4>DNI</h4>
+                <input type="number" id="ip_Cdni" class="fadeIn second">
+                <a href="#"> <img   style="size: 90px;" src="../FormularioCliente/icons/fingerprint-scan.png" alt="dd"></a>
+
+              </div>
+            <!-- Termina modificacion -->
+
             
+            </div>
+        
             <h4>Nombre</h4>
             <input type="text" id="ip_Cnom" class="fadeIn second">
             
             <h4>Edad</h4>
             <input type="number" id="ip_Cedad" class="fadeIn second">
 
-            <h4>DNI</h4>
-            <input type="number" id="ip_Cdni" class="fadeIn second">
+            
 
             <button type="submit" class="fadeIn fourth">Registrar</button>
             <button type="submit" class="fadeIn fourth">Cancelar</button>
