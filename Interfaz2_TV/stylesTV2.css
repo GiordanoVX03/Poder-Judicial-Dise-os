@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------- */
+/*                   Estructura de los Grid L & R                */
+/* ------------------------------------------------------------- */
+body {
+    background-color: black;
+}
+
+h5 {
+    font-size: 35;
+}
+
+.sec_1 {
+    width: 100%;
+    padding: 44px;
+    background-color: rgba(184, 3, 3, 0.938);
+    color: white;
+    text-align: center;
+    font-family: Fantasy;
+    text-transform: uppercase;
+}
+
+.sec_2 {
+    padding: 35px;
+    background-color: rgba(184, 3, 3, 0.938);
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    text-transform: uppercase;
+}
