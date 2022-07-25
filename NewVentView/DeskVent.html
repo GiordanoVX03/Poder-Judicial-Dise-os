@@ -18,11 +18,11 @@
                 <h5 style="color: rgb(131, 131, 131);">Cerrar Sesion</h5>
                 <button style="border: none;"><img src="../NewVentView/icons/log-out.svg" alt="logout"></button>
             </ul>
-
-
         </nav>
-
         <section class="hero__main container">
+            <!-- --------------------------------------------------------  -->
+            <!--                  Ventana de informacion                   -->
+            <!-- --------------------------------------------------------  -->
             <div class="hero__texts">
                 <div class="container-fluid shadow-lg p-3 mb-6 bg-white rounded text-center">
                     <br>
@@ -32,14 +32,14 @@
                         <h5>info</h5>
                         <h5>info</h5>
                         <h5>info</h5>
-
                     </div>
-
                     <button class="btn btn-danger btn-block">Cerrar Sesion</button>
-
                 </div>
             </div>
-            </div>
+            <!-- --------------------------------------------------------  -->
+            <!--                  Card View                                -->
+            <!-- --------------------------------------------------------  -->
+
             <div class="hero__picture container">
                 <div class="card carta text-center  shadow-lg ">
                     <div class="card-header" style="color: #919191;">
@@ -49,33 +49,45 @@
                         <p class="card-text">Nombre del litigante "Juan Tena"</p>
                         <button class="btn btn-danger btn-block">Llamar</button>
                         <button class="btn btn-danger btn-block">Ausente</button>
-                        <button class="btn btn-outline-info ">Llamar de otra ventanilla</button>
-
+                        <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#miModal">Llamar de
+                            otra especialidad</button>
                     </div>
                 </div>
             </div>
-
-
         </section>
-
-
-
     </header>
 
-    <section class="modal ">
-        <div class="modal__container">
-            <img src="images/modal.svg" class="modal__img">
-            <h2 class="modal__title">¡Bienvenido al sitio!</h2>
-            <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi
-                quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur
-                deleniti maxime.</p>
-            <a href="#" class="modal__close">Cerrar Modal</a>
+    <!-- --------------------------------------------------------  -->
+    <!-- Ventana Modal  -->
+    <!-- --------------------------------------------------------  -->
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" style="color: #bbbbbb;">Especialidad</h5>
+                </div>
+                <div class="modal-body">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Laboral</option>
+                        <option value="2">Familiar</option>
+                        <option value="3">ETC</option>
+                    </select>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-success  ">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    <!-- --------------------------------------------------------  -->
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>
