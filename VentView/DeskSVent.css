@@ -69,20 +69,11 @@ button[type=submit] {
     padding-left: 55px;
     padding-right: 55px;
 }
-button[type=submit2] {
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    
-    
-}
-button[type=submit2]{
-    border: none; 
-	background: none;
-}
+
+
 button[type=submit] {
     background-color: #9e0505;
+    display: inline-block;
     border: none;
     color: white;
     text-align: center;
@@ -93,17 +84,13 @@ button[type=submit] {
     font-family: system-ui;
 }
 
-button[type=submit2]:hover{
 
-    box-shadow: #9e0505;
-}
 button[type=submit]:hover {
     background-color: rgb(238, 27, 27);
 }
 
 button[type=button]:active,
 button[type=submit]:active,
-button[type=submit2]:active,
 button[type=reset]:active {
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
