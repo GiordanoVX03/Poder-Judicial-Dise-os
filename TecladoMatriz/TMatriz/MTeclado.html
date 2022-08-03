@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Touch Pad</title>
     <link rel="stylesheet" href="../TMatriz/EMTstyle.css">
+    <!-- CSS only -->
+    <!-- CSS only -->
 </head>
-<body >
+
+<body>
     <div id="btn_logout">
         <button style="border: none;"><img src="../TMatriz/icons/x-circle.svg" alt="logout"></button>
 
     </div>
     <div class="container">
-            <div class="display" id="result">
-                <div class="display2" id="output">
-                    <p class="result-box ip" id="output-value" > </p>
-                </div>
+        <div class="display" id="result">
+            <div class="display2" id="output">
+                <p class="result-box ip" id="output-value"> </p>
             </div>
-            <div class="buttons" id="keyboard">
-                <div class="row">
-                    <button class="botonesR number" type="submit" id="7">7</button>
-                    <button class="botonesR number" type="submit" id="8">8</button>
-                    <button class="botonesR number" type="submit" id="9">9</button>
-                </div>
-                <div class="row">
-                    <button class="botonesR number" type="submit" id="4">4</button>
-                    <button class="botonesR number" type="submit" id="5">5</button>
-                    <button class="botonesR number" type="submit" id="6">6</button>
-                </div>
-                <div class="row">
-                    <button class="botonesR number" type="submit" id="1">1</button>
-                    <button class="botonesR number" type="submit" id="2">2</button>
-                    <button class="botonesR number" type="submit" id="3">3</button>
-                </div>
-                <div class="row">
-                    <button class="botonesRZ number" type="submit" id="0">0</button>
-                    <button class="botonesR operator" type="submit" id="backspace">X</button>
+        </div>
+        <div class="buttons" id="keyboard">
+            <div class="row">
+                <button class="botonesR number" type="submit" id="7">7</button>
+                <button class="botonesR number" type="submit" id="8">8</button>
+                <button class="botonesR number" type="submit" id="9">9</button>
+            </div>
+            <div class="row">
+                <button class="botonesR number" type="submit" id="4">4</button>
+                <button class="botonesR number" type="submit" id="5">5</button>
+                <button class="botonesR number" type="submit" id="6">6</button>
+            </div>
+            <div class="row">
+                <button class="botonesR number" type="submit" id="1">1</button>
+                <button class="botonesR number" type="submit" id="2">2</button>
+                <button class="botonesR number" type="submit" id="3">3</button>
+            </div>
+            <div class="row">
+                <button class="botonesRZ number" type="submit" id="0">0</button>
+                <button class="botonesR operator" type="submit" id="backspace">X</button>
 
-                </div>
             </div>
-            <div class="right" id="keyboard">
-                <div>
-                    <button class="btnRightA" type="submit2" id="btnAceptar">
-                        Aceptar
-                    </button>
-                </div>
-                <div>
-                    <button class="btnRightA operator" type="submit3" id="clear">
-                        Borrar Todo
-                    </button>
-                </div>
-                <div>
-                    <button class="btnRightA" type="submit4" id="btnSinDNI">
-                        Sin DNI
-                    </button>
-                </div>
-                
-
-                
+        </div>
+        <div class="right" id="keyboard">
+            <div>
+                <button onclick="submitResult(event)" class="btnRightA" type="submit2" id="btnAceptar">
+                    Aceptar
+                </button>
             </div>
+            <div>
+                <button class="btnRightA operator" type="submit3" id="clear">
+                    Borrar Todo
+                </button>
+            </div>
+            <div>
+                <button class="btnRightA" type="submit4" >
+                    Sin DNI
+                </button>
+            </div>
+        </div>
     </div>
-    <script src="../TMatriz/FTeclado.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../TMatriz/javaScript/alertat.js"></script>
+    <script src="../TMatriz/javaScript/FTeclado.js"></script>
 
 </body>
 </html>
