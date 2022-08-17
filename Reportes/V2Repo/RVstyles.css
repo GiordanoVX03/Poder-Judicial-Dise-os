@@ -19,6 +19,10 @@ h5{
     color: rgb(192, 192, 192);
 
 }
+h4{
+    text-align: center;
+    text-transform: uppercase;
+}
 
 .cont__head {
     background-color: #fff;
@@ -49,7 +53,11 @@ h5{
     padding-right: 25px;
 
 }
-
+button{
+    border: none; 
+	background: none;
+    margin-top: 5px;
+}
 
 @media (min-width: 308px) and (max-width: 991.98px) {
     .cont__head {

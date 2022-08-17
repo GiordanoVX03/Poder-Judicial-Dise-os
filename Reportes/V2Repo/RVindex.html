@@ -8,22 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../V2Repo/RVstyles.css">
-
-
-
-
-
-
     <title>Version 2 Reportes</title>
 </head>
-
 <body>
-
     <div class="container-flex cont__head">
         <div class="container text-center ">
             <h5>
                 Reportes
-
             </h5>
         </div>
         <div class="container px-4 py-2 text-center">
@@ -54,7 +45,6 @@
                         <option value="3">Penal 2</option>
                     </select>
                 </div>
-
             </div>
             <div class="row gx-5 py-4">
                 <div class="col">
@@ -64,41 +54,51 @@
                 </div>
             </div>
         </div>
-
     </div>
-
     <div class="container-flex cont__bod">
         <div class="container">
-            <div class="row gx-5">
+            <div class="row gx-5 py-4">
                 <div class="col">
-                    <h4>Subfiltro Usuarios</h3>
-                        <select class="form-select gx-5" aria-label="Default select example">
-                            <option selected disabled>Seleccionar Sede</option>
-                            <option value="1">Sede 1</option>
-                            <option value="2">Sede 2</option>
-                            <option value="3">Sede 3</option>
-                        </select>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Usuarios</h3>
+
+                        </div>
+                        <div class="col">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#userModal"><img
+                                    src="../V2Repo/static/filter.svg" alt="filter-icon"></button>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <h4>Subfiltro Sede</h3>
-                        <select class="form-select gx-5" aria-label="Default select example">
-                            <option selected disabled>Seleccionar Sede</option>
-                            <option value="1">Sede 1</option>
-                            <option value="2">Sede 2</option>
-                            <option value="3">Sede 3</option>
-                        </select>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Sede</h3>
+                        </div>
+                        <div class="col">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#sedeModal"><img
+                                    src="../V2Repo/static/filter.svg" alt="filter-icon"></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <h4>Subfiltro Especialidad</h3>
-                        <select class="form-select gx-5" aria-label="Default select example">
-                            <option selected disabled>Seleccionar Sede</option>
-                            <option value="1">Sede 1</option>
-                            <option value="2">Sede 2</option>
-                            <option value="3">Sede 3</option>
-                        </select>
+                    <div class="row">
+                        <div class="col">
+                            <h4>Especialidad</h3>
+                        </div>
+                        <div class="col">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#espeModal"><img
+                                    src="../V2Repo/static/filter.svg" alt="filter-icon"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-success  ">Descargar </button>
+
                 </div>
             </div>
-            <div class="row py-5">
+            <div class="row py-2">
                 <div class="container">
                     <div id="myChart" style="height: 550px; margin-bottom: 98px;">
                     </div>
@@ -120,22 +120,105 @@
 
                     <div id="graficoGap" style="height: 550px; margin-bottom: 98px;">
                     </div>
-
-
-
                 </div>
-
-
-
-
-
-
-
-
             </div>
         </div>
-
     </div>
+
+    <!-- Ventana Modal Usuarios -->
+
+    <div class="modal fade" id="userModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" style="color: #bbbbbb;">Filtrar usuarios por</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            A-Z
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Otro Ejemplo
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-success  ">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ventana Modal Sede -->
+
+    <div class="modal fade" id="sedeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" style="color: #bbbbbb;">Filtrar Sede por</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Penal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Otro Ejemplo
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-success  ">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ventana Modal Especialidad -->
+
+    <div class="modal fade" id="espeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" style="color: #bbbbbb;">Filtrar Especialidad por</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Penal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Otro Ejemplo
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-success  ">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
     <script src="https://unpkg.com/ag-charts-community@6.1.0/dist/ag-charts-community.min.js"></script>
 
     <script src="../V2Repo/graficos/Lineal/data.js"></script>
@@ -159,6 +242,7 @@
 
     <script src="../V2Repo/graficos/LineGaps/dataGaps.js"></script>
     <script src="../V2Repo/graficos/LineGaps/mainGaps.js"></script>
+
 
 </body>
 
