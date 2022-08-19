@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -14,19 +15,20 @@ body {
     background-size: cover;
 }
 
-h5{
+h5 {
     text-transform: uppercase;
     color: rgb(192, 192, 192);
 
 }
-h4{
+
+h4 {
     text-align: center;
     text-transform: uppercase;
 }
 
 .cont__head {
     background-color: #fff;
-    height: 28%;
+    height: 30%;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
@@ -36,10 +38,11 @@ h4{
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
 
 }
-.cont__bod{
+
+.cont__bod {
     background-color: #fff;
     overflow-y: scroll;
-    height: 62%;
+    height: 60%;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
@@ -53,16 +56,118 @@ h4{
     padding-right: 25px;
 
 }
-button{
-    border: none; 
-	background: none;
+
+button {
+    border: none;
+    background: none;
     margin-top: 5px;
+}
+
+.select-btn {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+   width: 100%;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.select-btn .btn-text {
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}
+
+.select-btn .arrow-dwn {
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #f55151;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.select-btn.open .arrow-dwn {
+    transform: rotate(-180deg);
+}
+
+.list-items {
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.select-btn.open~.list-items {
+    display: block;
+}
+
+.list-items .item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+
+.list-items .item:hover {
+    background-color: #e7edfe;
+}
+
+.item .item-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.item .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    transition: all 0.3s ease-in-out;
+}
+
+.item.checked .checkbox {
+    background-color: #f55151;
+    border-color: #eb7b7b;
+}
+
+.checkbox .check-icon {
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.item.checked .check-icon {
+    transform: scale(1);
 }
 
 @media (min-width: 308px) and (max-width: 991.98px) {
     .cont__head {
         background-color: #fff;
-        height: 39%;
+        height: 42%;
     }
+    .cont__bod {
+        height: 50%;
+    }
+    
 
 }

@@ -7,9 +7,11 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../V2Repo/RVstyles.css">
     <title>Version 2 Reportes</title>
 </head>
+
 <body>
     <div class="container-flex cont__head">
         <div class="container text-center ">
@@ -38,12 +40,53 @@
                 </div>
                 <div class="col">
                     <h5>Especialidad </h5>
-                    <select class="form-select " aria-label="Default select example">
-                        <option selected disabled>Seleccionar Especialidad</option>
-                        <option value="1">Laboral</option>
-                        <option value="2">Penal</option>
-                        <option value="3">Penal 2</option>
-                    </select>
+                    <div class="container">
+                        <div class="select-btn border rounded">
+                            <span class="btn-text">Seleccionar Especialidad</span>
+                            <span class="arrow-dwn">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+
+                        <ul class="list-items">
+                            <li class="item"  >
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Laboral 1</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Laboral 2</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Laboral 3</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Laboral 4</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Laboral 5</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">Laboral 6</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row gx-5 py-4">
@@ -61,7 +104,7 @@
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            <h4>Usuarios</h3>
+                            <h5>Usuarios</h5>
 
                         </div>
                         <div class="col">
@@ -74,7 +117,7 @@
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            <h4>Sede</h3>
+                            <h5>Sede</h5>
                         </div>
                         <div class="col">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#sedeModal"><img
@@ -85,7 +128,7 @@
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            <h4>Especialidad</h3>
+                            <h5>Especialidad</h5>
                         </div>
                         <div class="col">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#espeModal"><img
@@ -96,6 +139,62 @@
                 <div class="col">
                     <button type="button" class="btn btn-success  ">Descargar </button>
 
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre </th>
+                                    <th scope="col">Hora Ingreso</th>
+                                    <th scope="col">Hora Atencion</th>
+                                    <th scope="col">Hora Salida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1"
+                                                checked>
+                                            <label class="custom-control-label" for="customCheck1">1</label>
+                                        </div>
+                                    </td>
+                                    <td>Lucas</td>
+                                    <td>8:00am</td>
+                                    <td>8:30am</td>
+                                    <td>6:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">2</label>
+                                        </div>
+                                    </td>
+                                    <td>Pepe </td>
+                                    <td>8:00am</td>
+                                    <td>8:30am</td>
+                                    <td>6:00pm</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">3</label>
+                                        </div>
+                                    </td>
+                                    <td>Juan</td>
+                                    <td>8:00am</td>
+                                    <td>8:30am</td>
+                                    <td>6:00pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="row py-2">
@@ -213,6 +312,8 @@
         </div>
     </div>
 
+    <!-- JavaScript Select -->
+    <script src="../V2Repo/JSSelect/RVselect.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
