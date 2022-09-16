@@ -63,6 +63,12 @@ button {
     margin-top: 5px;
 }
 
+.view__info{
+    margin-left: 2px;
+}
+
+
+
 .select-btn {
     display: flex;
     height: 40px;
